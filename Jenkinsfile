@@ -4,11 +4,12 @@ pipeline
 
     stages 
     {
+        
         stage('Build') 
         {
           steps 
           {
-               bat 'javac Hello.java'
+               bat 'javac Helloworld.java'
                bat 'java --version'
           }
         }
@@ -16,7 +17,7 @@ pipeline
         {
             steps 
             {
-                bat 'java Hello'
+                bat 'java Helloworld'
             }
         }   
     }
